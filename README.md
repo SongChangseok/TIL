@@ -1,10 +1,12 @@
 # TIL
-
 > Today I Learned
 
 오늘 공부한 내용들
 
+
 _7 TILs and counting..._
+
+---
 
 ### 3 most recent TILs
 
@@ -17,7 +19,6 @@ _7 TILs and counting..._
 - [React](#React)
 
 ### [React](#React)
-
 - [component](React/component.md)
 - [context API](React/context.md)
 - [fragment](React/fragment.md)
@@ -25,3 +26,5 @@ _7 TILs and counting..._
 - [key props](React/key.md)
 - [portals](React/portals.md)
 - [ref](React/ref.md)
+
+
