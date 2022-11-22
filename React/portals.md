@@ -56,8 +56,6 @@ return (
 
 ## ReactDom.createPortal
 
----
-
 포털의 핵심은 **컴포넌트에서 JSX 코드의 위치 변경 없이 렌더링된 HTML 내용을 다른 곳으로 옮기는 것이다.**
 
 createPortal은 첫 번째 인자는 렌더링되어야 하는 리액트 노드이고, 두 번째 인자는 포인터이다.

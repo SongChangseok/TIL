@@ -18,8 +18,6 @@ Context 를 사용하면 데이터를 사용하지 않을 여러 Component 를 �
 
 ## Context 한계
 
----
-
 여러 컴포넌트에 영향을 미치는 state들에 사용하기 적합하다. 하지만, 컴포넌트 구성을 대체할 수 없다.
 
 변경이 잦은 경우에는 리액트 컨텍스트는 적합하지 않다.
@@ -31,8 +29,6 @@ Context 를 사용하면 데이터를 사용하지 않을 여러 Component 를 �
 props의 모든 컴포넌트 커뮤니케이션을 대체하기 위해 사용하면 안된다.
 
 ## Context 예제(createContext, useContext, state, custom hook)
-
----
 
 ```javascript
 export const ContextTest = createContext();
