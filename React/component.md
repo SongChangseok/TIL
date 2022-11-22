@@ -1,4 +1,4 @@
-# 컴포넌트(component)
+# component
 
 Reusability(**재사용성**)과 **Separation of Concerns(**우려사항 분리\_\_)할 수 있도록 해주기 때문에 컴포넌트를 사용한다.
 

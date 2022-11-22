@@ -1,4 +1,4 @@
-# 컨텍스트 API(context API)
+# context API
 
 Component 에서 다른 Component 로 state 를 전달해주기 위해 props 형태로 전달해줘야 한다.
 

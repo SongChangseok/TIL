@@ -1,4 +1,4 @@
-# 훅스(hooks)
+# hooks
 
 Hook은 함수 컴포넌트에서 **React.state와 생명주기 기능(Lifecycle features)을 "연동(hook into)"할 수 있게 해주는 함수**이다. Hook은 class 안에서는 동작하지 않는다. 대신 class 없이 React를 사용할 수 있게 해주는 것이다.
 

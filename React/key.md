@@ -1,4 +1,4 @@
-# key prop
+# key props
 
 리액트에서 리스트의 아이템을 매핑할 때는 항상 key props를 추가해야한다.
 
