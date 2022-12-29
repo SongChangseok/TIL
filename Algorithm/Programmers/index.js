@@ -1,21 +1,17 @@
-// const t = "3141592";
-// const p = "271";
-// const t = "500220839878";
-// const p = "7";
-const t = "10203";
-const p = "15";
+// const s = "banana";
+const s = "foobar";
 
-console.log(solution(t, p));
+console.log(solution(s));
 
-function solution(t, p) {
-  var answer = 0;
-  let pLength = p.length;
+function solution(s) {
+  let targetArr = s.split("");
 
-  for (let i = 0; i < t.length - pLength + 1; i++) {
-    let target = t.substr(i, pLength);
+  return targetArr.map((target, index) => {
+    if (index === 0) return -1;
 
-    if (target <= p) answer++;
-  }
+    let cutOff = targetArr.slice(0, index);
+    let nearByIndex = [...cutOff].lastIndexOf(target);
 
-  return answer;
+    return nearByIndex === -1 ? nearByIndex : index - nearByIndex;
+  });
 }
