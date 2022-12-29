@@ -19,7 +19,7 @@ function solution(s) {
     if (index === 0) return -1;
 
     let cutOff = targetArr.slice(0, index);
-    let nearByIndex = [...cutOff].lastIndexOf(target);
+    let nearByIndex = cutOff.lastIndexOf(target);
 
     return nearByIndex === -1 ? nearByIndex : index - nearByIndex;
   });
