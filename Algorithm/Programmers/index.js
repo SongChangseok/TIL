@@ -1,23 +1,43 @@
-// const s = "{{2},{2,1},{2,1,3},{2,1,3,4}}";
-const s = "{{1,2,3},{2,1},{1,2,4,3},{2}}";
-// const s = "{{20,111},{111}}";
-// const s = "{{123}}";
-// const s = "{{4,2,3},{3},{2,3,4,1},{2,3}}";
+const record = [
+  "Enter uid1234 Muzi",
+  "Enter uid4567 Prodo",
+  "Leave uid1234",
+  "Enter uid1234 Prodo",
+  "Change uid4567 Ryan",
+];
 
-console.log(solution(s));
+// const addMsg = (msgArray, state, uid) => [...msgArray, { state, uid }];
+// const changeName = (uidList, uid, name) => ({ ...uidList, [uid]: name });
+// const convertState = (state) => {
+//   if (state === "Enter") return "님이 들어왔습니다.";
+//   if (state === "Leave") return "님이 나갔습니다.";
+//   return "";
+// };
 
-function solution(s) {
-  return s
-    .replace("{{", "")
-    .replace("}}", "")
-    .split("},{")
-    .sort((a, b) => a.length - b.length)
-    .reduce(
-      (acc, cur) => [
-        ...acc,
-        ...cur.split(",").filter((value) => !acc.includes(value)),
-      ],
-      []
-    )
-    .map((value) => parseInt(value));
-}
+// const solution = (record, msgArray = [], uidList = {}) => {
+//   if (!record.length)
+//     return msgArray.map(
+//       ({ uid, state }) => `${uidList[uid]}${convertState(state)}`
+//     );
+
+//   const [target, ...other] = record;
+//   const [state, uid, name = ""] = target.split(" ");
+
+//   switch (state) {
+//     case "Enter":
+//       return solution(
+//         other,
+//         addMsg(msgArray, state, uid),
+//         changeName(uidList, uid, name)
+//       );
+//     case "Leave":
+//       return solution(other, addMsg(msgArray, state, uid), uidList);
+//     case "Change":
+//       return solution(other, msgArray, changeName(uidList, uid, name));
+//     default:
+//       break;
+//   }
+// };
+
+
+console.log(solution(record));
