@@ -1,38 +1,37 @@
-// const operations = ["I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"];
-const operations = [
-  "I -45",
-  "I 653",
-  "D 1",
-  "I -642",
-  "I 45",
-  "I 97",
-  "D 1",
-  "D -1",
-  "I 333",
+const n = 3;
+const computers = [
+  [1, 1, 0],
+  [1, 1, 0],
+  [0, 0, 1],
 ];
+// const computers = [
+//   [1, 1, 0],
+//   [1, 1, 1],
+//   [0, 1, 1],
+// ];
 
-const solution = (operations) => {
-  let answer = [];
-  const dOperator = (operation) => {
-    if (operation === "D 1") return getMax(answer);
-    if (operation === "D -1") return getMin(answer);
-  };
-  const getMax = (array) => array.findIndex((v) => v === Math.max(...array));
-  const getMin = (array) => array.findIndex((v) => v === Math.min(...array));
+const solution = (n, computers) => {
+  let answer = 0;
+  const checkComputer = [];
 
-  operations.forEach((operation) => {
-    if (["D 1", "D -1"].includes(operation)) {
-      answer = answer.filter((v, i) => i !== dOperator(operation));
-      return true;
+  for (let i = 0; i < n; i++) {
+    if (checkComputer[i] === 0) {
+      dfs(i, computers, checkComputer);
+      answer++;
     }
-    const [, value] = operation.split(" ");
+  }
 
-    answer.push(Number(value));
-  });
+  console.log(checkComputer);
 
-  return answer.length === 0
-    ? [0, 0]
-    : [answer[getMax(answer)], answer[getMin(answer)]];
+  return dfs(computers);
 };
 
-console.log(solution(operations));
+const dfs = (targetIndex, checkComputer, computers) => {
+  const [target, ...other] = computers;
+
+
+  
+  return dfs(other);
+};
+
+console.log(solution(n, computers));
