@@ -15,23 +15,29 @@ const solution = (n, computers) => {
   const checkComputer = [];
 
   for (let i = 0; i < n; i++) {
-    if (checkComputer[i] === 0) {
-      dfs(i, computers, checkComputer);
+    if (checkComputer[i] !== 1) {
+      // console.log("start");
+      dfs(i, checkComputer, computers);
       answer++;
     }
   }
 
-  console.log(checkComputer);
-
-  return dfs(computers);
+  return answer;
 };
 
 const dfs = (targetIndex, checkComputer, computers) => {
-  const [target, ...other] = computers;
+  // console.log(targetIndex, checkComputer, computers);
 
-
-  
-  return dfs(other);
+  computers[0].forEach((value, index) => {
+    if (
+      index !== targetIndex &&
+      checkComputer[targetIndex] !== 1 &&
+      value === 1
+    ) {
+      checkComputer[targetIndex] = 1;
+      dfs(index, checkComputer, computers);
+    }
+  });
 };
 
 console.log(solution(n, computers));
