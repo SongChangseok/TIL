@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_9 TILs and counting..._
+_10 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [lazy](React/lazy.md) - Tue Jan 17 15:41:18 2023 +0900
 - [CLS](etc/CLS.md) - Tue Jan 17 10:34:54 2023 +0900
 - [router](React/router.md) - Thu Dec 29 23:00:15 2022 +0900
-- [component](React/component.md) - Tue Nov 22 21:07:21 2022 +0900
 
 ### Categories
 
@@ -25,6 +25,7 @@ _9 TILs and counting..._
 - [fragment](React/fragment.md)
 - [hooks](React/hooks.md)
 - [key props](React/key.md)
+- [lazy](React/lazy.md)
 - [portals](React/portals.md)
 - [ref](React/ref.md)
 - [router](React/router.md)
