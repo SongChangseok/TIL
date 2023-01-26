@@ -10,18 +10,18 @@ _11 TILs and counting..._
 
 ### 3 most recent TILs
 
-- [Big-O notation](Algorithm/Big-O notation.md) - Wed Jan 25 23:33:09 2023 +0900
+- [Big-O notation](Algorithm&DataStructures/Big-O notation.md) - Thu Jan 26 23:21:29 2023 +0900
 - [lazy](React/lazy.md) - Tue Jan 17 15:41:18 2023 +0900
 - [CLS](etc/CLS.md) - Tue Jan 17 10:34:54 2023 +0900
 
 ### Categories
 
-- [Algorithm](#Algorithm)
+- [Algorithm&DataStructures](#Algorithm&DataStructures)
 - [React](#React)
 - [etc](#etc)
 
-### [Algorithm](#Algorithm)
-- [Big-O notation](Algorithm/Big-O notation.md)
+### [Algorithm&DataStructures](#Algorithm&DataStructures)
+- [Big-O notation](Algorithm&DataStructures/Big-O notation.md)
 
 ### [React](#React)
 - [component](React/component.md)
