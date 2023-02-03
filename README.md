@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_12 TILs and counting..._
+_13 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
 - [# 접근법](Algorithm&DataStructures/문제 해결.md) - Tue Jan 31 23:41:47 2023 +0900
-- [Big-O notation](Algorithm&DataStructures/Big-O_notation.md) - Thu Jan 26 23:22:37 2023 +0900
 - [lazy](React/lazy.md) - Tue Jan 17 15:41:18 2023 +0900
+- [CLS](etc/CLS.md) - Tue Jan 17 10:34:54 2023 +0900
 
 ### Categories
 
@@ -21,8 +21,9 @@ _12 TILs and counting..._
 - [etc](#etc)
 
 ### [Algorithm&DataStructures](#Algorithm&DataStructures)
-- [Big-O notation](Algorithm&DataStructures/Big-O_notation.md)
 - [# 접근법](Algorithm&DataStructures/문제 해결.md)
+- [Big-O notation](Algorithm&DataStructures/빅오 표기법(Big-O_notation).md)
+- [- 자기자신을 호출하는 절차이다.](Algorithm&DataStructures/재귀(Recursion).md)
 
 ### [React](#React)
 - [component](React/component.md)
