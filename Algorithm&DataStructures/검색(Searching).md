@@ -19,3 +19,7 @@
 3. [ ~~1, 3, 4, 6, 8, 9, 11,~~ 12, **15**, 16, ~~17, 18, 19~~]
 
 </aside>
+
+## 출처
+
+[udemy](https://www.udemy.com/course/best-javascript-data-structures/learn/lecture/28560139#overview)
