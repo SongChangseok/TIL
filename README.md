@@ -4,7 +4,7 @@
 오늘 공부한 내용들
 
 
-_13 TILs and counting..._
+_14 TILs and counting..._
 
 ---
 
@@ -21,6 +21,7 @@ _13 TILs and counting..._
 - [etc](#etc)
 
 ### [Algorithm&DataStructures](#Algorithm&DataStructures)
+- [검색(Searching)](Algorithm&DataStructures/검색(Searching).md)
 - [# 접근법](Algorithm&DataStructures/문제 해결.md)
 - [Big-O notation](Algorithm&DataStructures/빅오 표기법(Big-O_notation).md)
 - [- 자기자신을 호출하는 절차이다.](Algorithm&DataStructures/재귀(Recursion).md)
