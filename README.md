@@ -4,7 +4,7 @@
 오늘 공부한 내용들
 
 
-_14 TILs and counting..._
+_15 TILs and counting..._
 
 ---
 
@@ -25,6 +25,7 @@ _14 TILs and counting..._
 - [# 접근법](Algorithm&DataStructures/문제 해결.md)
 - [Big-O notation](Algorithm&DataStructures/빅오 표기법(Big-O_notation).md)
 - [- 자기자신을 호출하는 절차이다.](Algorithm&DataStructures/재귀(Recursion).md)
+- [정렬(Sorting)](Algorithm&DataStructures/정렬(Sorting).md)
 
 ### [React](#React)
 - [component](React/component.md)
