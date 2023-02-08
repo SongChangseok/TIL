@@ -21,31 +21,19 @@
 
 배열을 **오름차순**으로 정렬을 한다면 더 큰 숫자가 한 번에 하나씩 뒤로 이동한다.
 
-> [ **5**, 3, 4, 1, 2 ] 
-> [ 3, **5**, 4, 1, 2 ] 
-> [ 3, 4, **5**, 1, 2 ] 
-> [ 3, 4, 1, **5**, 2 ] 
-> [ 3, 4, 1, 2, **5** ]
+> [ **5**, 3, 4, 1, 2 ] > [ 3, **5**, 4, 1, 2 ] > [ 3, 4, **5**, 1, 2 ] > [ 3, 4, 1, **5**, 2 ] > [ 3, 4, 1, 2, **5** ]
 
 ## 선택 정렬(Selection Sort)
 
 버블 정렬과 비슷하지만 큰 값을 배열 끝에 위치시키는 대신 **작은 값을 한 번에 하나씩** 위치에 배열한다. 마찬가지로 처음부터 끝까지 움직이지만, 실제 정렬된 데이터는 처음부터 누적되고 있다.
 
-> [ 5, **3**, 4, 1, 2 ]
-> [ 5, **3**, 4, 1, 2 ]
-> [ 5, **3**, 4, 1, 2 ]
-> [ 5, 3, 4, **1**, 2 ]
-> [ **1**, 5, 3, 4, 2 ]
+> [ 5, **3**, 4, 1, 2 ] > [ 5, **3**, 4, 1, 2 ] > [ 5, **3**, 4, 1, 2 ] > [ 5, 3, 4, **1**, 2 ] > [ **1**, 5, 3, 4, 2 ]
 
 ## 삽입 정렬(Insertion Sort)
 
 모드 요소를 앞에서부터 **이미 정렬된 배열 부분과 비교**하여 자신의 위치를 찾아 삽입하면서 정렬한다.
 
-> [ 5, **3**, 4, 1, 2 ] 
-> [ 3, 5, **4**, 1, 2 ] 
-> [ 3, 4, 5, **1**, 2 ] 
-> [ 1, 3, 4, 5, **2** ] 
-> [ 1, 2, 3, 4, 5 ]
+> [ 5, **3**, 4, 1, 2 ] > [ 3, 5, **4**, 1, 2 ] > [ 3, 4, 5, **1**, 2 ] > [ 1, 3, 4, 5, **2** ] > [ 1, 2, 3, 4, 5 ]
 
 ## 버블/선택/삽입 정렬 알고리즘의 Big-O
 
@@ -56,9 +44,50 @@
 | 삽입 정렬 | O(n^2)           | O(n^2)           | O(n^2)           | O(1)       |
 
 ## 병합 정렬(Merge Sort)
+재귀적 방법을 사용하여 **배열을 분할 하고 그것들을 정렬하고 다시 합치는 방법**이다. 이 정렬 알고리즘은 분할을 하는 과정에서 이미 정렬되어 있는 두 개의 배열을 합치는 과정에서 작동한다. 병합 정렬은 재귀적 방법을 사용하기 때문에 자료의 양이 많아질수록 느리게 작동하는 단점이 있다.
+
+```jsx
+// Merge function from earlier
+function merge(arr1, arr2) {
+  let results = [];
+  let i = 0;
+  let j = 0;
+  while (i < arr1.length && j < arr2.length) {
+    if (arr2[j] > arr1[i]) {
+      results.push(arr1[i]);
+      i++;
+    } else {
+      results.push(arr2[j]);
+      j++;
+    }
+  }
+  while (i < arr1.length) {
+    results.push(arr1[i]);
+    i++;
+  }
+  while (j < arr2.length) {
+    results.push(arr2[j]);
+    j++;
+  }
+  return results;
+}
+
+// Recrusive Merge Sort
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+  let mid = Math.floor(arr.length / 2);
+  let left = mergeSort(arr.slice(0, mid));
+  let right = mergeSort(arr.slice(mid));
+  return merge(left, right);
+}
+```
+| 시작복잡도(최적) | 시간복잡도(평균) | 시간복잡도(최악) | 공간복잡도 |
+| --- | --- | --- | --- |
+| O(n log n) | O(n log n) | O(n log n) | O(n) |
 
 ## 참고
 
 [Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix) - VisuAlgo](https://visualgo.net/en/sorting)
 
 ## 출처
+[udemy](https://www.udemy.com/course/best-javascript-data-structures/learn/lecture/28560341#overview)
