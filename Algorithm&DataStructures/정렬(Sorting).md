@@ -44,6 +44,7 @@
 | 삽입 정렬 | O(n^2)           | O(n^2)           | O(n^2)           | O(1)       |
 
 ## 병합 정렬(Merge Sort)
+
 재귀적 방법을 사용하여 **배열을 분할 하고 그것들을 정렬하고 다시 합치는 방법**이다. 이 정렬 알고리즘은 분할을 하는 과정에서 이미 정렬되어 있는 두 개의 배열을 합치는 과정에서 작동한다. 병합 정렬은 재귀적 방법을 사용하기 때문에 자료의 양이 많아질수록 느리게 작동하는 단점이 있다.
 
 ```jsx
@@ -81,13 +82,54 @@ function mergeSort(arr) {
   return merge(left, right);
 }
 ```
+
 | 시작복잡도(최적) | 시간복잡도(평균) | 시간복잡도(최악) | 공간복잡도 |
 | --- | --- | --- | --- |
 | O(n log n) | O(n log n) | O(n log n) | O(n) |
+
+## 기수 정렬(Radix Sort)
+
+정렬할 데이터를 각 자릿수별로 비교하는 정렬 방법이다. 배열의 요소들을 **각 자릿수별로 정렬**하는 방법으로 가장 낮은 자리부터 시작하여 거꾸로 배열하는 방식이다. 기수 정렬은 자릿수별로 비교하므로 배열의 요소들이 비교적 작거나 일정한 범위에 속할 때 시간 복잡도가 O(n)이 되고 거의 모든 상황에서 시간 복잡도가 O(nk)이 된다.
+
+```jsx
+function getDigit(num, i) {
+  return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
+}
+
+function digitCount(num) {
+  if (num === 0) return 1;
+  return Math.floor(Math.log10(Math.abs(num))) + 1;
+}
+
+function mostDigits(nums) {
+  let maxDigits = 0;
+  for (let i = 0; i < nums.length; i++) {
+    maxDigits = Math.max(maxDigits, digitCount(nums[i]));
+  }
+  return maxDigits;
+}
+
+function radixSort(nums){
+  let maxDigitCount = mostDigits(nums);
+  for(let k = 0; k < maxDigitCount; k++){
+    let digitBuckets = Array.from({length: 10}, () => []);
+    for(let i = 0; i < nums.length; i++){
+      let digit = getDigit(nums[i],k);
+      digitBuckets[digit].push(nums[i]);
+    }
+    nums = [].concat(...digitBuckets);
+  }
+  return nums;
+}
+
+```
+
+![기수 정렬](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b8ea7733-7d8f-4252-98be-1873f06491a1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230209%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230209T064143Z&X-Amz-Expires=86400&X-Amz-Signature=c44a7058ca5530391877d548fa62f8fd39d6482f1742204ea95c7b529d566488&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
 ## 참고
 
 [Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix) - VisuAlgo](https://visualgo.net/en/sorting)
 
 ## 출처
+
 [udemy](https://www.udemy.com/course/best-javascript-data-structures/learn/lecture/28560341#overview)
