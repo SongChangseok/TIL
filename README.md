@@ -4,7 +4,7 @@
 오늘 공부한 내용들
 
 
-_15 TILs and counting..._
+_16 TILs and counting..._
 
 ---
 
@@ -34,6 +34,7 @@ _15 TILs and counting..._
 - [hooks](React/hooks.md)
 - [key props](React/key.md)
 - [lazy](React/lazy.md)
+- [NextJS](React/nextjs.md)
 - [portals](React/portals.md)
 - [ref](React/ref.md)
 - [router](React/router.md)
