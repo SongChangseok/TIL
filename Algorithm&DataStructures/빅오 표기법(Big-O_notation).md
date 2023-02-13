@@ -133,7 +133,6 @@ const logAtMost5 = (n) => {
 - booleans, numbers, undefined, null은 O(1)이다.
 - 문자열은 O(n)이다.
 - reference 타입(배열, 객체)는 대부분 O(n)이다.
--
 
 ```jsx
 // O(1)
