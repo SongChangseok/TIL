@@ -143,6 +143,8 @@ export async function getStaticProps() {
 ### 동적 페이지 구현 방법
 
 - NextJS에서 동적 페이지를 구현하기 위해서는 `getStaticPaths` 함수를 사용해야 한다.
+- `fallback` 값이 `true`인 경우, getStaticPaths 가 동적 경로를 반환하지 못하면, Next.js 애플리케이션은 동적 렌더링을 수행합니다. 즉, 사용자가 페이지에 접속할 때 서버에서 페이지를 렌더링하며, 이때 각 페이지에 대한 경로를 생성합니다.
+- `fallback` 값이 `false`인 경우, getStaticPaths 가 동적 경로를 반환하지 못하면, Next.js 애플리케이션이 404 에러를 반환합니다.
 
   ```jsx
   // HomePage.js
@@ -198,7 +200,66 @@ export default {
 };
 ```
 
-- 또 다른 방법으로는 NextJS가 제공하는 **개발 서버 기능**을 사용하는 것이다. 개발 서버 기능은 백엔드 API 구현을 도와준다. 개발 서버는 코드를 수정하는 데 필요한 모든 기능들을 제공하며, 내부적으로 \*\*Hot Module Replacement
+- 또 다른 방법으로는 NextJS가 제공하는 개발 서버 기능을 사용하는 것이다. 개발 서버 기능은 백엔드 API 구현을 도와준다. 개발 서버는 코드를 수정하는 데 필요한 모든 기능들을 제공하며, 내부적으로 Hot Module Replacement을 사용해서 빠른 속도로 코드 수정을 지원한다.
+
+## Head 컴포넌트
+
+- Next.js의 **`Head`** 컴포넌트는 HTML 페이지의 **`<head>`** 섹션에 내용을 추가할 수 있는 컴포넌트이다. 이를 통해 페이지의 title, meta description, favicon 등을 쉽게 설정할 수 있다.
+- 예를 들어, 다음과 같이 **`Head`** 컴포넌트를 사용하여 페이지의 title과 meta description을 설정할 수 있다.
+
+```jsx
+import Head from "next/head";
+
+function HomePage() {
+  return (
+    <div>
+      <Head>
+        <title>My Next.js Site</title>
+        <meta name="description" content="Welcome to my Next.js site" />
+      </Head>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+
+export default HomePage;
+```
+
+```jsx
+import Head from "next/head";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>My Next.js App</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
+}
+
+export default MyApp;
+```
+
+또한, 다음과 같이 **`link`** 태그를 사용하여 favicon을 지정할 수도 있습니다:
+
+```html
+<head>
+  <title>My Next.js Site</title>
+  <meta name="description" content="Welcome to my Next.js site" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+```
+
+**`Head`** 컴포넌트를 사용하면 Next.js 페이지의 **`<head>`** 섹션을 쉽게 관리할 수 있습니다.
+
+## Vercel
+
+- 프론트엔드 애플리케이션을 손쉽게 배포할 수 있는 서비스이다.
+- Next.js, React, Gatsby 등의 다양한 프레임워크를 지원하며, 개발부터 배포까지 모든 과정을 자동화하기 때문에 손쉬운 배포를 위한 최적화를 제공한다.
+- 또한, 사용자가 작성한 코드를 자동으로 컴파일하고, 테스트하고, 빠른 속도로 배포해준다.
+- Vercel의 다양한 기능들과 효과적인 자동화 과정을 통해 프론트엔드 애플리케이션의 배포가 더욱 쉽고 빠르게 가능하다.
 
 ## 출처
 
