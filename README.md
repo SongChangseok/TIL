@@ -10,9 +10,9 @@ _19 TILs and counting..._
 
 ### 3 most recent TILs
 
+- [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md) - Wed Feb 15 17:56:53 2023 +0900
 - [단일 연결 리스트(Single Linked List)](Algorithm&DataStructures/단일연결리스트(SingleLinkedList).md) - Wed Feb 15 17:55:21 2023 +0900
 - [문제 해결](Algorithm&DataStructures/문제해결.md) - Wed Feb 15 17:55:21 2023 +0900
-- [Big-O notation](Algorithm&DataStructures/빅오표기법(Big-O_notation).md) - Wed Feb 15 17:55:21 2023 +0900
 
 ### Categories
 
@@ -40,7 +40,7 @@ _19 TILs and counting..._
 - [react-transition-group](React/react-transition-group.md)
 - [ref](React/ref.md)
 - [router](React/router.md)
-- [Uncontrolled component와 Controlled component](React/uncontrolled component와 controlled component.md)
+- [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md)
 
 ### [etc](#etc)
 - [CLS](etc/CLS.md)
