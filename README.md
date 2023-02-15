@@ -25,7 +25,7 @@ _19 TILs and counting..._
 - [단일 연결 리스트(Single Linked List)](Algorithm&DataStructures/단일연결리스트(SingleLinkedList).md)
 - [문제 해결](Algorithm&DataStructures/문제해결.md)
 - [Big-O notation](Algorithm&DataStructures/빅오표기법(Big-O_notation).md)
-- [- 자기자신을 호출하는 절차이다.](Algorithm&DataStructures/재귀(Recursion).md)
+- [재귀(recursion)](Algorithm&DataStructures/재귀(Recursion).md)
 - [정렬(Sorting)](Algorithm&DataStructures/정렬(Sorting).md)
 
 ### [React](#React)
