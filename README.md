@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_17 TILs and counting..._
+_18 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [Uncontrolled component와 Controlled component](React/uncontrolled component와 controlled component.md) - Wed Feb 15 14:12:56 2023 +0900
 - [단일 연결 리스트(Single Linked List)](Algorithm&DataStructures/단일 연결 리스트(Single Linked List).md) - Mon Feb 13 15:44:05 2023 +0900
 - [# 접근법](Algorithm&DataStructures/문제 해결.md) - Tue Jan 31 23:41:47 2023 +0900
-- [lazy](React/lazy.md) - Tue Jan 17 15:41:18 2023 +0900
 
 ### Categories
 
@@ -39,6 +39,7 @@ _17 TILs and counting..._
 - [portals](React/portals.md)
 - [ref](React/ref.md)
 - [router](React/router.md)
+- [Uncontrolled component와 Controlled component](React/uncontrolled component와 controlled component.md)
 
 ### [etc](#etc)
 - [CLS](etc/CLS.md)
