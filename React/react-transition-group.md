@@ -26,3 +26,27 @@
   - `onExit` : function 타입으로, 컴포넌트가 **제거**될 때 애니메이션이 시작될 때 호출된다.
   - `onExiting` : function 타입으로, 컴포넌트가 **제거**될 때 애니메이션이 끝나기 직전 호출됩니다.
   - `onExited` : function 타입으로, 컴포넌트가 **제거**될 때 애니메이션이 끝난 직후 호출됩니다.
+
+## CssTransition 컴포넌트
+
+- `classNames` props는 `React`에서 제공하는 `CSS Transition` 컴포넌트에서 사용하는 속성 중 하나이다. 이 속성은 애니메이션 클래스 이름을 지정하는데 사용되며, CSS Transition이 마운트, 언마운트 또는 업데이트될 때 적용되는 클래스 이름을 정의한다.
+- `classNames` props는 **객체 또는 문자열**을 값으로 가지며, 이 값은 CSS 클래스 이름으로 사용된다. 클래스 이름은 CSS 파일에서 정의할 수 있으며, Transition 컴포넌트에서 지정한 클래스 이름은 특정 상태에 따라 자동으로 적용된다.
+- 객체 형태로 `classNames` props를 지정하면, Transition 컴포넌트에서 적용되는 클래스 이름을 더욱 정밀하게 제어할 수 있다. 이 객체는 다음과 같은 속성을 포함할 수 있다.
+  - `enter`: 컴포넌트가 처음 마운트될 때 적용되는 클래스 이름
+  - `enterActive`: 컴포넌트가 처음 마운트될 때 애니메이션을 적용할 클래스 이름
+  - `enterDone`: 컴포넌트가 처음 마운트될 때 애니메이션이 끝난 후 적용할 클래스 이름
+  - `exit`: 컴포넌트가 마운트 해제될 때 적용할 클래스 이름
+  - `exitActive`: 컴포넌트가 마운트 해제될 때 애니메이션을 적용할 클래스 이름
+  - `exitDone`: 컴포넌트가 마운트 해제될 때 애니메이션이 끝난 후 적용할 클래스 이름
+- 예를 들어, `classNames` props를 다음과 같이 지정하면, 컴포넌트가 처음 마운트될 때 `example-enter` 클래스 이름이 적용되며, 애니메이션 중일 때는 `example-enter-active` 클래스 이름이 적용되며, 애니메이션이 끝난 후에는 `example-enter-done` 클래스 이름이 적용됩니다.
+  ```jsx
+  <CSSTransition
+    classNames={{
+      enter: "example-enter",
+      enterActive: "example-enter-active",
+      enterDone: "example-enter-done",
+    }}
+  >
+    {/* ... */}
+  </CSSTransition>
+  ```
