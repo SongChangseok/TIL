@@ -10,8 +10,8 @@ _19 TILs and counting..._
 
 ### 3 most recent TILs
 
+- [연결 리스트(Linked List)](Algorithm&DataStructures/연결리스트(LinkedList).md) - Thu Feb 16 16:10:27 2023 +0900
 - [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md) - Wed Feb 15 17:56:53 2023 +0900
-- [단일 연결 리스트(Single Linked List)](Algorithm&DataStructures/단일연결리스트(SingleLinkedList).md) - Wed Feb 15 17:55:21 2023 +0900
 - [문제 해결](Algorithm&DataStructures/문제해결.md) - Wed Feb 15 17:55:21 2023 +0900
 
 ### Categories
@@ -22,9 +22,9 @@ _19 TILs and counting..._
 
 ### [Algorithm&DataStructures](#Algorithm&DataStructures)
 - [검색(Searching)](Algorithm&DataStructures/검색(Searching).md)
-- [단일 연결 리스트(Single Linked List)](Algorithm&DataStructures/단일연결리스트(SingleLinkedList).md)
 - [문제 해결](Algorithm&DataStructures/문제해결.md)
 - [Big-O notation](Algorithm&DataStructures/빅오표기법(Big-O_notation).md)
+- [연결 리스트(Linked List)](Algorithm&DataStructures/연결리스트(LinkedList).md)
 - [재귀(recursion)](Algorithm&DataStructures/재귀(Recursion).md)
 - [정렬(Sorting)](Algorithm&DataStructures/정렬(Sorting).md)
 
