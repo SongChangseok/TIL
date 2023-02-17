@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_20 TILs and counting..._
+_21 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [리액트 앱 테스트](React/react-app-test.md) - Fri Feb 17 17:23:27 2023 +0900
 - [스택(Stack)](Algorithm&DataStructures/스택(Stack).md) - Fri Feb 17 10:43:11 2023 +0900
 - [연결 리스트(Linked List)](Algorithm&DataStructures/연결리스트(LinkedList).md) - Thu Feb 16 16:10:27 2023 +0900
-- [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md) - Wed Feb 15 17:56:53 2023 +0900
 
 ### Categories
 
@@ -38,6 +38,7 @@ _20 TILs and counting..._
 - [lazy](React/lazy.md)
 - [NextJS](React/nextjs.md)
 - [portals](React/portals.md)
+- [리액트 앱 테스트](React/react-app-test.md)
 - [react-transition-group](React/react-transition-group.md)
 - [ref](React/ref.md)
 - [router](React/router.md)
