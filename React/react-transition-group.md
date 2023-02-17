@@ -38,7 +38,7 @@
   - `exit`: 컴포넌트가 마운트 해제될 때 적용할 클래스 이름
   - `exitActive`: 컴포넌트가 마운트 해제될 때 애니메이션을 적용할 클래스 이름
   - `exitDone`: 컴포넌트가 마운트 해제될 때 애니메이션이 끝난 후 적용할 클래스 이름
-- 예를 들어, `classNames` props를 다음과 같이 지정하면, 컴포넌트가 처음 마운트될 때 `example-enter` 클래스 이름이 적용되며, 애니메이션 중일 때는 `example-enter-active` 클래스 이름이 적용되며, 애니메이션이 끝난 후에는 `example-enter-done` 클래스 이름이 적용됩니다.
+- 예를 들어, `classNames` props를 다음과 같이 지정하면, 컴포넌트가 처음 마운트될 때 `example-enter` 클래스 이름이 적용되며, 애니메이션 중일 때는 `example-enter-active` 클래스 이름이 적용되며, 애니메이션이 끝난 후에는 `example-enter-done` 클래스 이름이 적용된다.
   ```jsx
   <CSSTransition
     classNames={{
