@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_21 TILs and counting..._
+_22 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [Vercel VS Firebase의 호스팅](etc/Vercl-VS-Firebase-Hosting.md) - Fri Feb 17 18:23:37 2023 +0900
 - [리액트 앱 테스트](React/react-app-test.md) - Fri Feb 17 17:23:27 2023 +0900
 - [스택(Stack)](Algorithm&DataStructures/스택(Stack).md) - Fri Feb 17 10:43:11 2023 +0900
-- [연결 리스트(Linked List)](Algorithm&DataStructures/연결리스트(LinkedList).md) - Thu Feb 16 16:10:27 2023 +0900
 
 ### Categories
 
@@ -46,5 +46,6 @@ _21 TILs and counting..._
 
 ### [etc](#etc)
 - [CLS](etc/CLS.md)
+- [Vercel VS Firebase의 호스팅](etc/Vercl-VS-Firebase-Hosting.md)
 
 
