@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_22 TILs and counting..._
+_23 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [큐(Queue)](Algorithm&DataStructures/큐(Queue).md) - Tue Feb 21 17:36:18 2023 +0900
 - [Vercel VS Firebase의 호스팅](etc/Vercl-VS-Firebase-Hosting.md) - Fri Feb 17 18:23:37 2023 +0900
 - [리액트 앱 테스트](React/react-app-test.md) - Fri Feb 17 17:23:27 2023 +0900
-- [스택(Stack)](Algorithm&DataStructures/스택(Stack).md) - Fri Feb 17 10:43:11 2023 +0900
 
 ### Categories
 
@@ -28,6 +28,7 @@ _22 TILs and counting..._
 - [연결 리스트(Linked List)](Algorithm&DataStructures/연결리스트(LinkedList).md)
 - [재귀(recursion)](Algorithm&DataStructures/재귀(Recursion).md)
 - [정렬(Sorting)](Algorithm&DataStructures/정렬(Sorting).md)
+- [큐(Queue)](Algorithm&DataStructures/큐(Queue).md)
 
 ### [React](#React)
 - [component](React/component.md)
