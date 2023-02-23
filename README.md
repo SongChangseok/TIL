@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_23 TILs and counting..._
+_24 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [State & User Interaction](React/state&user-interaction.md) - Wed Feb 22 20:08:31 2023 +0900
 - [큐(Queue)](Algorithm&DataStructures/큐(Queue).md) - Tue Feb 21 17:36:18 2023 +0900
 - [Vercel VS Firebase의 호스팅](etc/Vercl-VS-Firebase-Hosting.md) - Fri Feb 17 18:23:37 2023 +0900
-- [리액트 앱 테스트](React/react-app-test.md) - Fri Feb 17 17:23:27 2023 +0900
 
 ### Categories
 
@@ -43,6 +43,7 @@ _23 TILs and counting..._
 - [react-transition-group](React/react-transition-group.md)
 - [ref](React/ref.md)
 - [router](React/router.md)
+- [State & User Interaction](React/state&user-interaction.md)
 - [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md)
 
 ### [etc](#etc)
