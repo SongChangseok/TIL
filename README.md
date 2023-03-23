@@ -4,15 +4,15 @@
 오늘 공부한 내용들
 
 
-_25 TILs and counting..._
+_26 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [useReducer](React/useReducer.md) - Tue Mar 21 20:57:26 2023 +0900
 - [트리(Tree)](Algorithm&DataStructures/이진 탐색 트리 (Binary Search Tree).md) - Fri Feb 24 11:37:26 2023 +0900
 - [State & User Interaction](React/state&user-interaction.md) - Wed Feb 22 20:08:31 2023 +0900
-- [큐(Queue)](Algorithm&DataStructures/큐(Queue).md) - Tue Feb 21 17:36:18 2023 +0900
 
 ### Categories
 
@@ -46,6 +46,7 @@ _25 TILs and counting..._
 - [router](React/router.md)
 - [State & User Interaction](React/state&user-interaction.md)
 - [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md)
+- [useReducer](React/useReducer.md)
 
 ### [etc](#etc)
 - [CLS](etc/CLS.md)
