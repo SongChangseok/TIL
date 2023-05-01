@@ -63,3 +63,8 @@ console.log("Hello, World");
     "dev": "ts-node ./src/app.ts"
   },
 ```
+
+## 참고
+
+https://offbyone.tistory.com/445
+
