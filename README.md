@@ -4,7 +4,7 @@
 오늘 공부한 내용들
 
 
-_26 TILs and counting..._
+_27 TILs and counting..._
 
 ---
 
@@ -18,6 +18,7 @@ _26 TILs and counting..._
 
 - [Algorithm&DataStructures](#Algorithm&DataStructures)
 - [React](#React)
+- [TypeScript](#TypeScript)
 - [etc](#etc)
 
 ### [Algorithm&DataStructures](#Algorithm&DataStructures)
@@ -47,6 +48,9 @@ _26 TILs and counting..._
 - [State & User Interaction](React/state&user-interaction.md)
 - [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md)
 - [useReducer](React/useReducer.md)
+
+### [TypeScript](#TypeScript)
+- [Typescript 최초 설정](TypeScript/setting.md)
 
 ### [etc](#etc)
 - [CLS](etc/CLS.md)
