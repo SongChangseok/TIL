@@ -38,3 +38,39 @@ const reducer = (**state, action**) => {
 위에서 선언한 reducer 함수를 useReducer의 첫번째 인자로 전달하고, 두번째는 초기화 객체를 전달한다.
 
 useReducer가 반환하는 배열의 첫번째는 현재 state이고 두번째는 dispatch 함수인데, action을 인수로 받아서 reducer를 실행시키는 함수이다.
+
+```jsx
+const Component = ({ onLogin }) => {
+  const [state, dispath] = useReducer(reducer, { value: "", isValid: null });
+  const emailChangeHandler = (event) => {
+    dispath({ type: "USER_INPUT", val: event.target.value });
+  };
+  const validateEmailHandler = () => {
+    dispath({ type: "INPUT_BLUR" });
+  };
+  const submitHandler = (event) => {
+    event.preventDefault();
+    onLogin(state.value);
+  };
+  return (
+    <Card className={classes.login}>
+      <form onSubmit={submitHandler}>
+        <div
+          className={`${classes.control} ${
+            state.isValid === false ? classes.invalid : ""
+          }`}
+        >
+          <label htmlFor="email">E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            value={state.value}
+            onChange={emailChangeHandler}
+            onBlur={validateEmailHandler}
+          />
+        </div>
+      </form>
+    </Card>
+  );
+};
+```
