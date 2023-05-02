@@ -4,7 +4,7 @@
 오늘 공부한 내용들
 
 
-_27 TILs and counting..._
+_28 TILs and counting..._
 
 ---
 
@@ -47,6 +47,7 @@ _27 TILs and counting..._
 - [router](React/router.md)
 - [State & User Interaction](React/state&user-interaction.md)
 - [Uncontrolled component와 Controlled component](React/uncontrolled-component&controlled-omponent.md)
+- [useEffect](React/useEffeact.md)
 - [useReducer](React/useReducer.md)
 
 ### [TypeScript](#TypeScript)
