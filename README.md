@@ -4,7 +4,7 @@
 오늘 공부한 내용들
 
 
-_28 TILs and counting..._
+_29 TILs and counting..._
 
 ---
 
@@ -35,6 +35,7 @@ _28 TILs and counting..._
 ### [React](#React)
 - [component](React/component.md)
 - [context API](React/context.md)
+- [ErrorBoundary](React/errorBoundary.md)
 - [fragment](React/fragment.md)
 - [hooks](React/hooks.md)
 - [key props](React/key.md)
